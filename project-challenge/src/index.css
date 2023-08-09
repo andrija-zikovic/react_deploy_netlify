@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.window {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(33, 33, 33);
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.window p {
+  text-align: center;
+  line-height: 250px; /* This centers the text vertically */
+  font-size: 30px;
+}
+
+/* Centering the "input" below the "window" */
+.input {
+  width: 300px; /* Same width as "window" */
+  height: 30px;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid rgb(33, 33, 33);
+  border-radius: 5px;
+  position: absolute;
+  top: calc(50% + 150px); /* Adjust the value based on your design */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+}
+
+.input input {
+  font-size: 30px;
+}
