@@ -1,12 +1,16 @@
 import React from 'react'
 
-const Window = ({ color }) => {
+const Window = ({ newColor, hexValue, isDarkText }) => {
   const windowStyle = {
-    backgroundColor: color,
+    backgroundColor: newColor,
+    color: isDarkText ? "#000" : "#FFF"
   };
 
   return (
-    <div className='window' style={windowStyle}><p>{color || 'Empty Value'}</p></div>
+    <div className='window' style={windowStyle}>
+      <p>{newColor ? newColor : 'Empty Value'}</p>
+      <p>{hexValue ? hexValue : null}</p>  
+    </div>
   )
 }
 
