@@ -1,5 +1,9 @@
 const NewPost = ({
-  handleSubmit, postTitle, setPostTitle, postBody, setPostBody
+  handleSubmit,
+  postTitle,
+  setPostTitle,
+  postBody,
+  setPostBody,
 }) => {
   return (
     <main className="NewPost">
@@ -7,22 +11,22 @@ const NewPost = ({
       <form className="newPostForm" onSubmit={handleSubmit}>
         <label htmlFor="postTitle">Title:</label>
         <input
-            id="postTitle"
-            type="text"
-            value={postTitle}
-            onChange={(e) => setPostTitle(e.target.value)}
+          id="postTitle"
+          type="text"
+          value={postTitle}
+          onChange={(e) => setPostTitle(e.target.value)}
         />
         <lable htmlFor="postBody">Post:</lable>
         <textarea
-            id="postBody"
-            required
-            value={postBody}
-            onChange={(e) => setPostBody(e.target.value)}
+          id="postBody"
+          required
+          value={postBody}
+          onChange={(e) => setPostBody(e.target.value)}
         />
         <button type="submit">Submit</button>
       </form>
     </main>
-  )
-}
+  );
+};
 
-export default NewPost
+export default NewPost;
